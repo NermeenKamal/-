@@ -1,3 +1,10 @@
+const d = new Date();
+document.querySelector("#demo").innerHTML = (d.getMonth() + 1) + " - " + d.getDate();
+const year = new Date();
+document.querySelector("#year").innerHTML = d.toDateString();
+
+
+
 function selectOnlyThis(checkbox) {
     var checkboxes = document.getElementsByName('vv');
     checkboxes.forEach((item) => {
