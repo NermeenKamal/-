@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/8d488656-61b2-4daa-ac3b-96d9fd702d82)
+
 # Fasa7a - Arabic Poetry Website
 
 This project is a website dedicated to showcasing the beauty and importance of the Arabic language through its rich tradition of poetry. The website, titled **Fasa7a**, offers an exploration of Arabic poetry across different eras, highlighting various poetic forms and their evolution.
