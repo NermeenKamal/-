@@ -20,13 +20,13 @@ This project is a website dedicated to showcasing the beauty and importance of t
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/fasa7a.git
+   git clone https://github.com/NermeenKamal/Fasa7a.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd fasa7a
+   cd Fasa7a
    ```
 
 3. Open `index.html` in your browser to view the website locally.
@@ -59,13 +59,13 @@ Contributions are welcome! Please fork this repository and submit a pull request
 1. استنساخ المستودع:
 
    ```bash
-   git clone https://github.com/yourusername/fasa7a.git
+   git clone https://github.com/NermeenKamal/Fasa7a.git
    ```
 
 2. الانتقال إلى مجلد المشروع:
 
    ```bash
-   cd fasa7a
+   cd Fasa7a
    ```
 
 3. فتح `index.html` في متصفحك لعرض الموقع محليًا.
