@@ -1,7 +1,6 @@
 const d = new Date();
-document.querySelector("#demo").innerHTML = (d.getMonth() + 1) + " - " + d.getDate();
-const year = new Date();
-document.querySelector("#year").innerHTML = d.toDateString();
+document.querySelector("#demo").innerHTML = d.toLocaleDateString('ar-EG', { month: 'numeric', day: 'numeric' });
+document.querySelector("#year").innerHTML = d.toLocaleDateString('ar-EG', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
 
 
 
