@@ -436,6 +436,8 @@ footer{
     width: 100%;
     justify-content: flex-start;
     align-items: center;
+    position: relative;
+    z-index: 2;
 }
 .fa-brands{
     font-size: 30px;
