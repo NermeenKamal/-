@@ -500,7 +500,7 @@ footer h5 {
 }
 .category{
     background-image: url("../img/poem.png");
-    height: 900px;
+    height: 824px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -927,6 +927,9 @@ input{
 
 
 @media only screen and (max-width: 500px) and (min-width: 320px){
+    .category{
+      height: 900px;
+    }
     .About h3{
         font-size: 50px;
     }
