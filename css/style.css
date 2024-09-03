@@ -1073,6 +1073,12 @@ input{
 }
 
 @media (max-width: 687px) and (min-width: 368px){
+    .cc img{
+        margin-bottom: 19px;
+    }
+    header{
+        height: 105px;
+    }
     .page{
         font-size: 28px;
         margin-right: 16px;
