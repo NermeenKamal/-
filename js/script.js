@@ -1,5 +1,10 @@
+// تحديد التاريخ الحالي
 const d = new Date();
+
+// عرض الشهر واليوم باللغة العربية
 document.querySelector("#demo").innerHTML = d.toLocaleDateString('ar-EG', { month: 'numeric', day: 'numeric' });
+
+// عرض التاريخ الكامل باللغة العربية
 document.querySelector("#year").innerHTML = d.toLocaleDateString('ar-EG', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
 
 
@@ -36,3 +41,4 @@ function choose() {
         alert('يرجى اختيار كل من نوع الشعر والتصنيف.');
     }
 }
+
