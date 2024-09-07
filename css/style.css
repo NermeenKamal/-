@@ -78,6 +78,12 @@ main h2{
     background-size: cover;
     background-position: top;
 }
+#egypt{
+    background-image: url("../img/egypt.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
 
 
 body::before {
@@ -164,9 +170,6 @@ body::before {
 }
 .fa-calendar-days{
     font-size: 24px;
-    /*position: absolute;*/
-    left: 22%;
-    top: 4.5%;
     display: inline;
 }
 #year {
@@ -224,8 +227,6 @@ nav{
     position: absolute;
     left: 0;
     height: 100%;
-    /* padding: 325px; */
-    /* padding-left: 0; */
     padding-left: 270px;
     padding-top: 380px;
     text-align: center;
@@ -243,9 +244,11 @@ nav{
 }
 #poem{
     position: relative;
-
 }
-#poetry button{
+#egypt{
+    position: relative;
+}
+#poetry button, #egypt button{
     border: none;
     outline: none;
     border-radius: 10%;
@@ -265,17 +268,19 @@ nav{
 
 
 
-#poem div{
+#poem div, #egypt div{
     position: absolute;
     height: 100%;
-    /* padding-left: 673px; */
     padding-right: 79px;
     padding-top: 174px;
     text-align: center;
-    /* padding-left: 407px; */
     right: 0;
 }
-#poem p{
+#egypt div{
+    padding-right: 115px;
+    padding-top: 217px;
+}
+#poem p, #egypt p{
     color: #f8ffca;
     font-size: 55px;
     font-family: "Reem Kufi", sans-serif;
@@ -299,7 +304,7 @@ nav{
     cursor: pointer;
 
 }
-#poem button:hover , #poetry button:hover{
+#poem button:hover , #poetry button:hover, #egypt button:hover{
     transform: scale(1.1);
     box-shadow: 6px 6px 5px rgba(220, 210, 149, 0.62);
     background-color: #291636;
@@ -436,8 +441,6 @@ footer{
     width: 100%;
     justify-content: flex-start;
     align-items: center;
-    position: relative;
-    z-index: 2;
 }
 .fa-brands{
     font-size: 30px;
@@ -493,7 +496,7 @@ footer h5 {
 
 #poems{
     background-image: url("../img/category.png");
-    height: 768px;
+    height: 916px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -502,19 +505,21 @@ footer h5 {
 }
 .category{
     background-image: url("../img/poem.png");
-    height: 824px;
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
 }
-#poems #poem-intro{
+#poem-intro{
     padding-top: 140px;
+    height: 100%;
+    padding-bottom: 29px;
 }
 .category .div1{
     padding-top: 84px;
 }
-#poems h2, .category h2{
+#poems h2, .category h2, .eg-main h2{
     color: #f8ffca;
     font-size: 45px;
     font-family: "Zain", system-ui;
@@ -612,9 +617,6 @@ footer h5 {
     margin-top: 30px;
     padding-bottom: 13px;
 }
-
-
-
 
 
 .checkbox-wrapper-33 {
@@ -730,13 +732,6 @@ footer h5 {
 }
 
 
-
-
-
-
-
-
-
 .cc{
     background-image: url("../img/cc.png");
     height: 100%;
@@ -745,9 +740,6 @@ footer h5 {
     background-size: cover;
     text-align: center;
 }
-
-
-
 
 .bb{
     display: flex;
@@ -806,13 +798,11 @@ audio {
     margin: auto;
 }
 
-/* Hide the default controls (if desired) */
 audio::-webkit-media-controls-panel {
     background-color: #ffd397; /* Purple background for controls */
     border-radius: 10px;
 }
 
-/* This affects only WebKit browsers (like Chrome and Safari) */
 audio::-webkit-media-controls-play-button,
 audio::-webkit-media-controls-volume-slider,
 audio::-webkit-media-controls-mute-button,
@@ -820,7 +810,6 @@ audio::-webkit-media-controls-timeline {
     filter: invert(100%); /* Invert color (white) */
 }
 
-/* For Firefox (basic customization) */
 audio::-moz-volume-control,
 audio::-moz-progress-bar {
     background-color: rgba(29, 13, 40, 0.68); /* Change color for Firefox */
@@ -880,9 +869,8 @@ input{
 }
 #submit{
     background: radial-gradient(circle, rgb(56 71 119) 30%, rgb(41 54 96) 61%);
-    border-radius: 4%;
     border: none;
-    width: 237px;
+    width: 128px;
     height: 52px;
     font-size: 23px;
     font-family: "Zain", system-ui;
@@ -893,7 +881,7 @@ input{
     cursor: pointer;
     margin-top: 50px;
     padding: 11px;
-    border-radius: 22%;
+    border-radius: 11%;
     text-decoration: none;
 }
 #submit:hover{
@@ -925,13 +913,165 @@ input{
 }
 
 
+#prime{
+    display: flex;
+    flex-direction: column;
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.links img{
+    border-radius: 20%;
+}
+.a1{
+    margin-right: 50px;
+}
+.links a:hover, #prime iframe:hover{
+    transform: scale(1.3);
+}
+
+.linkks{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.team-photo h4{
+    color: rgb(248, 255, 202);
+    font-size: 35px;
+    font-family: "Reem Kufi", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+.team-photo p{
+    color: rgb(248, 255, 202);
+    font-size: 20px;
+    font-family: "Zain", system-ui;
+    font-weight: 200;
+    font-style: normal;
+    text-align: center;
+    text-shadow: 6px 6px 3px #36386c;
+}
+.team-photo{
+    margin-bottom: 50px;
+}
+.team-photo h4{
+    margin-top: 5px;
+}
+.team-photo img{
+    border-radius: 15%;
+    box-shadow: 8px 9px 20px #f8ffca;
+    animation: photo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+}
+@keyframes photo {
+    0%{
+        position: relative;
+        top: -6px;
+        box-shadow: 8px 9px 20px #f8ffca;
+    }
+    50%{
+       position: relative;
+       top: 10px;
+        box-shadow: 8px 9px 20px rgba(248, 255, 202, 0.65);
+    }
+    100%{
+        position: relative;
+        top: -6px;
+        box-shadow: 8px 9px 20px #f8ffca;
+    }
+}
+
+
+.eg-main{
+        background-image: url("../img/Umm Kulthum.png");
+        height: 895px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+    }
+.eg-main .team-photo{
+    margin-bottom: 0;
+}
+.eg-first{
+    background-image: url("../img/Shawky.png");
+    height: 850px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+#umm{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50%;
+    align-items: center;
+}
+
+.umm-frame {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    align-content: flex-end;
+}
+.umm-frame iframe {
+    width: 367px;
+    height: 203px;
+    border-radius: 6%;
+    margin-right: 12px;
+    margin-bottom: 21px;
+    box-shadow: 10px 7px 10px #364160;
+    animation: umm;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+}
+@keyframes umm{
+    0%{
+        box-shadow: 10px 10px 10px #364160;
+    }
+    50%{
+        box-shadow: 10px 10px 10px rgba(176, 189, 230, 0.82);
+    }
+    75%{
+        box-shadow: 10px 10px 10px rgba(255, 241, 132, 0.82);
+    }
+   80%{
+        box-shadow: 10px 10px 10px #b36a98;
+    }
+    100%{
+        box-shadow: 10px 10px 10px #364160;
+    }
+}
+.umm-frame iframe:hover{
+    transform: scale(1.2);
+}
 
 
 
 @media only screen and (max-width: 500px) and (min-width: 320px){
-    .category{
-      height: 900px;
-    }
     .About h3{
         font-size: 50px;
     }
@@ -995,18 +1135,12 @@ input{
         font-size: 21px;
     }
 }
-
 @media only screen and (max-width: 480px){
     .bb{
         font-size: 12px;
     }
 }
 @media only screen and (max-width: 800px) {
-    /*.wwk{*/
-    /*    flex-direction: column;*/
-    /*    margin-top: 134px;*/
-    /*    margin-left: -350px;*/
-    /*}*/
     header{
         height: 113px;
     }
@@ -1072,14 +1206,22 @@ input{
     .type3 h4 span {
         font-size: 29px;
     }
+    .umm-frame iframe {
+        width: 292px;
+        height: 155px;
+        border-radius: 6%;
+        margin-right: 0px;
+        margin-bottom: 21px;
+        box-shadow: 10px 7px 10px #364160;
+    }
 }
 
 @media (max-width: 687px) and (min-width: 368px){
-    .cc img{
-        margin-bottom: 19px;
-    }
     header{
         height: 105px;
+    }
+    .cc img{
+        margin-bottom: 19px;
     }
     .page{
         font-size: 28px;
@@ -1093,8 +1235,8 @@ input{
     }
     .wwk{
         flex-direction: column;
-        margin-top: 113px;
-        margin-left: -93px;
+        margin-top: 105px;
+        margin-left: -91px;
     }
     #demo {
         font-size: 58px;
@@ -1104,12 +1246,13 @@ input{
     margin-top: -2px;
     margin-left: -31px;
 }
+    #poem-intro p {
+        font-size: 16px;
 }
-
+}
 @media only screen and (max-width: 804px) {
     .text{
         margin-top: -2px;
-        padding-top: 95px;
+        padding-top: 148px;
     }
 }
-
