@@ -66,9 +66,8 @@
 
 <script>
     document.getElementById('recommendation-form').addEventListener('submit', function(e) {
-        e.preventDefault(); // منع إعادة تحميل الصفحة
+        e.preventDefault();
 
-        // الحصول على بيانات النموذج
         const formData = new FormData(this);
 
         // إرسال البيانات باستخدام AJAX
@@ -78,9 +77,7 @@
         })
             .then(response => response.text())
             .then(data => {
-                // إظهار رسالة تأكيد بعد النجاح
                 alert('!تم الإرسال');
-                // يمكنك إعادة تعيين النموذج بعد الإرسال
                 document.getElementById('recommendation-form').reset();
             })
             .catch(error => {
