@@ -17,6 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Error connecting to the database: " . print_r(sqlsrv_errors(), true));
     }
 
+
     $sql = "INSERT INTO Recommendations (name, email, recommendation) VALUES (?, ?, ?)";
     $params = array($name, $email, $recommendation);
     $stmt = sqlsrv_query($conn, $sql, $params);
