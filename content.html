@@ -28,7 +28,7 @@
     <div class="container">
         <h1>تسجيل مقترحات</h1>
 
-        <form>
+        <form id="recommendation-form">
             <div class="op">
                 <label>الإسم</label>&nbsp;&nbsp;&nbsp;
                 <input type="text" name="name" required>
@@ -43,7 +43,6 @@
             <br> <br>
             <button type="submit" id="submit">إرسال</button>
         </form>
-
     </div>
 </section>
 
@@ -61,9 +60,35 @@
             <i class="fa-brands fa-linkedin-in" onclick='window.location.href="https://www.linkedin.com/in/nirmn-kamal/"' style="color: #f8ffca;"></i>
             <i class="fa-brands fa-behance" onclick='window.location.href="https://www.behance.net/Nermeen_Kamal"' style="color: #f8ffca;"></i>
         </div>
-        <button class="recommend" onclick='window.location.href="content.html"'>إرسال مقترحات</button>
+        <button class="recommend" onclick='window.location.href="content.php"'>إرسال مقترحات</button>
     </div>
 </footer>
+
+<script>
+    document.getElementById('recommendation-form').addEventListener('submit', function(e) {
+        e.preventDefault(); // منع إعادة تحميل الصفحة
+
+        // الحصول على بيانات النموذج
+        const formData = new FormData(this);
+
+        // إرسال البيانات باستخدام AJAX
+        fetch('content.php', {
+            method: 'POST',
+            body: formData
+        })
+            .then(response => response.text())
+            .then(data => {
+                // إظهار رسالة تأكيد بعد النجاح
+                alert('!تم الإرسال');
+                // يمكنك إعادة تعيين النموذج بعد الإرسال
+                document.getElementById('recommendation-form').reset();
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('حدث خطأ أثناء إرسال البيانات');
+            });
+    });
+</script>
 
 <script src="js/script.js"></script>
 </body>
