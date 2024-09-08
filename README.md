@@ -14,6 +14,7 @@ This project is a website dedicated to showcasing the beauty and importance of t
 ### Technologies Used
 
 - **Frontend:** HTML, CSS, JavaScript
+- **Backend:** PHP, SQL Server, Xampp
 - **Design:** Canva (for designing images and visuals)
 - **Audio:** Curated high-quality poetry recitations
 
@@ -53,6 +54,7 @@ Contributions are welcome! Please fork this repository and submit a pull request
 ### التقنيات المستخدمة
 
 - **الواجهة الأمامية:** HTML, CSS, JavaScript
+- **الواجهة الخلفية:** PHP, SQL Server, Xampp
 - **التصميم:** Canva (لتصميم الصور والمرئيات)
 - **الصوت:** تسجيلات شعرية مختارة بعناية عالية الجودة
 
